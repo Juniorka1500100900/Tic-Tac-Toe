@@ -50,7 +50,7 @@ public class GameBoard {
     }
 
 
-    private static boolean isValidMove (char[][] board, String position) {
+    public static boolean isValidMove (char[][] board, String position) {
         switch(position) {
             case "1":
                 return (board[0][0] == ' ');
