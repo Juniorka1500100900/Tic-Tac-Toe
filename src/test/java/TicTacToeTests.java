@@ -13,7 +13,7 @@ public class TicTacToeTests {
                 {'X','O','O'},
                 {'O','X',' '},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'O'));
+        assertTrue(GameLogic.hasContestantWon(board, 'O',3));
     }
     @Test
     void ThreeOInSecondRowWin() {
@@ -22,7 +22,7 @@ public class TicTacToeTests {
                 {'O','O','O'},
                 {'X',' ','X'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'O'));
+        assertTrue(GameLogic.hasContestantWon(board, 'O', 3));
     }
     @Test
     void ThreeOInThirdRowWin() {
@@ -31,7 +31,7 @@ public class TicTacToeTests {
                 {'X','X',' '},
                 {'O','O','O'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'O'));
+        assertTrue(GameLogic.hasContestantWon(board, 'O', 3));
     }
     @Test
     void ThreeOInFirstColumnWin() {
@@ -40,7 +40,7 @@ public class TicTacToeTests {
                 {'O',' ','X'},
                 {'O','X',' '},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'O'));
+        assertTrue(GameLogic.hasContestantWon(board, 'O', 3));
     }
     @Test
     void ThreeOInSecondColumnWin() {
@@ -49,7 +49,7 @@ public class TicTacToeTests {
                 {'O','O','X'},
                 {'X','O','X'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'O'));
+        assertTrue(GameLogic.hasContestantWon(board, 'O', 3));
     }
     @Test
     void ThreeOInThirdColumnWin() {
@@ -58,7 +58,7 @@ public class TicTacToeTests {
                 {'X',' ','O'},
                 {'X','X','O'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'O'));
+        assertTrue(GameLogic.hasContestantWon(board, 'O', 3));
     }
     @Test
     void ThreeODiagonallyOptionOneWin() {
@@ -67,7 +67,7 @@ public class TicTacToeTests {
                 {'X','O','X'},
                 {'O',' ','X'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'O'));
+        assertTrue(GameLogic.hasContestantWon(board, 'O', 3));
     }
     @Test
     void ThreeODiagonallyOptionTwoWin() {
@@ -76,7 +76,7 @@ public class TicTacToeTests {
                 {' ','O','X'},
                 {'X','X','O'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'O'));
+        assertTrue(GameLogic.hasContestantWon(board, 'O', 3));
     }
     @Test
     void ThreeXInFirstRowWin() {
@@ -85,7 +85,7 @@ public class TicTacToeTests {
                 {'X','O','O'},
                 {'O',' ',' '},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'X'));
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 3));
     }
     @Test
     void ThreeXInSecondRowWin() {
@@ -94,7 +94,7 @@ public class TicTacToeTests {
                 {'X','X','X'},
                 {'O',' ','O'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'X'));
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 3));
     }
     @Test
     void ThreeXInThirdRowWin() {
@@ -103,7 +103,7 @@ public class TicTacToeTests {
                 {'O','O','X'},
                 {'X','X','X'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'X'));
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 3));
     }
     @Test
     void ThreeXInFirstColumnWin() {
@@ -112,7 +112,7 @@ public class TicTacToeTests {
                 {'X','O','O'},
                 {'X',' ',' '},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'X'));
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 3));
     }
     @Test
     void ThreeXInSecondColumnWin() {
@@ -121,7 +121,7 @@ public class TicTacToeTests {
                 {'X','X','O'},
                 {'O','X','O'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'X'));
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 3));
     }
     @Test
     void ThreeXInThirdColumnWin() {
@@ -130,7 +130,7 @@ public class TicTacToeTests {
                 {'O',' ','X'},
                 {'O','X','X'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'X'));
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 3));
     }
     @Test
     void ThreeXDiagonallyOptionOneWin() {
@@ -139,7 +139,7 @@ public class TicTacToeTests {
                 {'X','X','O'},
                 {'X',' ','O'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'X'));
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 3));
     }
     @Test
     void ThreeXDiagonallyOptionTwoWin() {
@@ -148,7 +148,7 @@ public class TicTacToeTests {
                 {'O','X','X'},
                 {' ',' ','X'},
         };
-        assertTrue(GameLogic.hasContestantWon(board, 'X'));
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 3));
     }
     @Test
     void GameFinishedInATieOptionOne() {
@@ -157,7 +157,7 @@ public class TicTacToeTests {
                 {'X','O','X'},
                 {'O','O','X'},
         };
-        assertTrue(GameLogic.isGameFinished(board));
+        assertTrue(GameLogic.isGameFinished(board,3));
     }
     @Test
     void GameFinishedInATieOptionTwo() {
@@ -166,7 +166,7 @@ public class TicTacToeTests {
                 {'X','O','O'},
                 {'O','X','X'},
         };
-        assertTrue(GameLogic.isGameFinished(board));
+        assertTrue(GameLogic.isGameFinished(board,3));
     }
     @Test
     void GameFinishedInATieOptionThree() {
@@ -175,7 +175,7 @@ public class TicTacToeTests {
                 {'X','X','O'},
                 {'O','O','X'},
         };
-        assertTrue(GameLogic.isGameFinished(board));
+        assertTrue(GameLogic.isGameFinished(board,3));
     }
     @Test
     void NotValidMove_OccupiedPosition() {
@@ -184,7 +184,7 @@ public class TicTacToeTests {
                 {' ','X','O'},
                 {'O','O','X'},
         };
-        assertFalse(GameBoard.isValidMove(board, "9"));
+        assertFalse(GameBoard.isValidMove(board, "1"));
     }
     @Test
     void NotValidMove_InvalidInput() {
@@ -195,5 +195,71 @@ public class TicTacToeTests {
         };
         assertFalse(GameBoard.isValidMove(board, "H"));
     }
+
+    //few extra tests after I implemented 10x10 board and enhanced game option.
+    @Test
+    void FiveXInARowWin() {
+        char[][] board = {
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ','X','X','X','X','X',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ','O',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ','O',' '},
+                {' ',' ',' ',' ','O',' ','O',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+        };
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 5));
     }
+    @Test
+    void FiveXInColumnWin() {
+        char[][] board = {
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {'X',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {'X',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {'X',' ',' ',' ','O',' ',' ',' ',' ',' '},
+                {'X',' ',' ',' ',' ',' ',' ',' ','O',' '},
+                {'X',' ',' ',' ','O',' ','O',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+        };
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 5));
+    }
+    @Test
+    void FiveODiagonallyWin() {
+        char[][] board = {
+                {' ','X',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {'X',' ',' ',' ',' ','X','X',' ','X',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ','O',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ','O',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ','O',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ','O',' ',' ',' '},
+                {' ','X',' ',' ',' ',' ',' ','O',' ',' '},
+        };
+        assertTrue(GameLogic.hasContestantWon(board, 'O', 5));
+    }
+    @Test
+    void FiveXDiagonallyWin() {
+        char[][] board = {
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {'O',' ',' ',' ',' ','O',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ',' ',' ','X','X',' ',' ',' '},
+                {' ',' ',' ',' ',' ',' ',' ',' ',' ',' '},
+                {' ',' ',' ','O',' ','X',' ',' ',' ',' '},
+                {' ',' ',' ',' ','X',' ',' ',' ','O',' '},
+                {'O',' ',' ','X',' ',' ',' ',' ',' ',' '},
+                {' ',' ','X',' ',' ',' ',' ',' ','O',' '},
+                {' ','X',' ',' ',' ',' ',' ',' ',' ',' '},
+        };
+        assertTrue(GameLogic.hasContestantWon(board, 'X', 5));
+    }
+}
 
