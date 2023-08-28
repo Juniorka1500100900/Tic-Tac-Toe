@@ -193,7 +193,7 @@ public class TicTacToeTests {
                 {' ','X','O'},
                 {'O','O','X'},
         };
-        assertFalse(GameBoard.isValidMove(board, "H"));
+        assertFalse(GameBoard.isValidMove(board, "1"));
     }
 
     //few extra tests after I implemented 10x10 board and enhanced game option.
